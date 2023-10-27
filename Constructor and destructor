@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class Simpleclass{
+    public:
+    Simpleclass(){
+        cout<<"Constructor called"<<endl;
+    }
+    ~Simpleclass(){
+        cout<<"Destructor called"<<endl;
+    }
+};
+
+int main(){
+    cout<<"YUDHEEKSHANA _ LAB EXERCISE 4\n";
+    cout<<"CONSTRUCTOR AND DESTRUCTOR\n";
+    cout<<"Calling constructor..."<<endl;
+    Simpleclass obj;
+    cout<<"Calling destructor..."<<endl;
+    return 0;
+}
