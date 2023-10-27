@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Person{
+    private:
+        string name;
+        int age;
+    public:
+        Person(const string &n,int a):name(n),age(a){}
+        Person(const Person&n2):name(n2.name),age(n2.age){}
+    void display(){
+        cout<<" Name : "<<name<<", Age: "<<age<<endl;
+    }
+};
+
+int main(){
+    string x;
+    int y;
+    cout<<"YUDHEEKSHANA_LAB EXERCISE-5_COPY CONSTRUCTOR"<<endl;
+    cout<<"Enter the person name:"<<endl;
+    cin>>x;
+    cout<<"Enter the person age:"<<endl;
+    cin>>y;
+    Person person1(x,y);
+    Person person_copy=person1;
+    cout<<"Person 1";
+    person1.display();
+    cout<<"Person 1 (copy)";
+    person_copy.display();
+    return 0;
+}
